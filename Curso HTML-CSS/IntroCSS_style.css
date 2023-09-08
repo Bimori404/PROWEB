@@ -1,0 +1,112 @@
+/*
+    etiqueta {
+    atributo : valor;
+    }
+
+  * Unidades de medida *
+    pixeles: px
+    puntos: pt
+    centimetros: cm
+    pulgadas: in
+
+  * Estilos *
+    Texto
+    Parrafo
+    Fondo
+    Caja
+
+*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Estructura Basica */
+p {                 font-family: cursive; }
+h1 , h2 {           font-family: initial; }
+p strong {          font-family: fantasy; }
+.ContenedorDIV p{   border: black 1px solid; }
+#blue {             color: blue; }
+#red {              color: red; }
+#yellow {           color: yellow; }
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Estilos de texto */
+#p1 {
+    /* atributo : valor; */
+    color: red;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+#p2 {
+    color: #fe00ff;
+    font-size: x-large;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+#p3 {
+    font-weight: 900;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Estilos de parrafo y fondo */
+#texto {
+    line-height: 20px;
+    text-align: justify;
+    text-indent: inherit;
+
+    background-image: image("serp.jpg");
+    /* 
+    background-color: aqua;
+    
+    
+    background-image: url( "https://static-cdn.jtvnw.net/jtv_user_pictures/60735fd3-c068-47b6-97db-2a3b6b813018-profile_image-70x70.png" );
+    */
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Estilos de cajas */
+.cajas {
+    width: 150px;
+    height: 150px;
+ /* border : tamaño estilo color */
+    border:  3px   solid  blue;
+ /* margin-..(top, right, bottom, left): tamaño */
+ /* margin: top right bottom left */
+    margin: 25px 10px 100px 30px;
+    border-radius: 15px;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Estilo CSS Pseudoclases */
+a:link {
+    color: green;
+}
+a:visited {
+    color: tomato;
+}
+a:hover {
+    color: aqua;
+}
+a:active {
+    color: crimson;
+}
+a:focus {
+    color: rgb(77, 221, 20);
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Posiciones */
+#caja1 {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+#caja2 {
+    width: 50%;
+    height: 150px;
+ /* margin: top right bottom left */
+    margin: 50px 150px 100px 280px;
+    border-radius: 10px;
+    background-color: red;
+    position: fixed;
+}

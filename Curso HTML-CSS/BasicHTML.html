@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Cabezera Hyper Text Markup Laanguaje</title>
+    <link></head> Vincular arch con esta pagina
+    <style></style> Definir estilos sin utilizar arch externos
+    <meta></meta> Metadatos
+    <script></script>  Añade scripts de js
+</head>
+
+<body>
+<!-- Hyper Text Markup Laanguaje -->
+
+    <h2> Estructura basica de HTML </h2>
+    <p>
+--------!DOCTYPE html                               <br>
+--------html                                        <br>  
+------------head                                    <br>
+----------------title *aqui va un titulo* /title    <br>
+------------/head                                   <br>
+------------body                                    <br>
+----------------h3 *aqui va un encabezado* /h3      <br>
+----------------p *aqui va un parrafo* /p           <br>
+------------/body                                   <br>
+--------/html                                       <br>
+
+    </p>
+
+    <h1>Etiqueta de encabezado h1</h1>
+    <h2>Etiqueta h2</h2>
+    <h3>Etiqueta h3</h3>
+    <h4>Etiqueta h4</h4>
+    <h5>Etiqueta h5</h5>
+    <h6>Etiqueta h6</h6>
+
+    <p>Etiqueta de parrafo </p>
+
+    <br> Salto de linea
+
+    <p>
+        <b>Negritas</b>
+        <strong>Negritas</strong> 
+        <i>Cursiva</i>
+        <em>Cursiva</em>
+        <s>Tachado</s>
+        <del>Tachado</del>
+        <u>Subrayado</u>
+        <center>------------------------------ Centrado ------------------------------</center>
+        <sup>Superindice</sup>
+        <sub>Subindice</sub>
+        <!--Comentario-->
+    </p>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <h1>Listas</h1>
+    <!-- <ol></ol> Lista ordenada -->
+    <!-- <ul></ul> Lista desordenada -->
+    <!-- <li></li> Elementos de la lista -->
+    <h2> Lista ordenada</h2>
+    <ol>
+        <li>Item a</li>
+        <li>Item 2</li>
+    </ol>
+
+    <h2>Lista desordenada</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <h2>Lista Combinada</h2>
+        <ol>
+            <li>Item 1</li>
+            <ul>
+                <li>
+                    Item 1
+                </li>
+            </ul>
+            <li>Item 2</li>
+        </ol>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+
+    <!-- <table> </table>  Define una tabla -->
+    <!-- <tr></tr>  Define una fila -->
+    <!-- <td></td>  Define una celda -->
+    <!-- <th></th> Crea cabeceras -->
+    <p>Tabla de compras</p>
+    <table border="1">
+        <tr>
+            <th> No. </th>
+            <th> Precio </th>
+            <th> Objeto </th>
+        </tr>
+        <tr>
+            <td> Celda 1 </td>
+            <td> $500 </td>
+            <td> Pc </td>
+        </tr>
+        <tr>
+            <td> Celda 2 </td>
+            <td> $350 </td>
+            <td> DVD </td>
+        </tr>
+    </table>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <p>Contenedores</p>
+
+        <div > Estoy en un contenedor div </div>
+        <div></div>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <p>Enlaces</p>
+
+    <a href="PaginaDestino.html">Enlace 1</a> <br>
+    <a href="https://www.twitch.tv/ijordanius">Enlace 2</a>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <p>Imagenes</p>
+
+    <img src="" alt="Esta imagen era de una oveja, creemé">
+    <img src="patas.jpg" alt="Gracias a dios que no viste esta imagen">
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <p>Formularios</p>
+
+    <form action="PaginaDestino.html" method="">
+        <label for="Texto"> Nombre </label> <!-- Sirve para dar nombre a un campo -->
+        <input name="Texto" type="text" maxlength="5">
+        <input name="Password" type="password" value="password">
+        <input name="Checkbox" type="checkbox" value="checkbox"> 
+        <input name="File" type="file" value="file"> <!-- Sirve para subir archivos-->
+        <input name="Hidden" type="hidden" value="hidden"> <!-- Campo oculto -->
+        <input name="Reest" type="reset" value="Borar Formulario"> <!-- Limpia los campos del formulario -->
+        <input name="Submit" type="submit" value="Enviar"> <!-- Envia la informacion -->
+    </form>
+
+</body>
+<!---------------------------------------------------------------------------------------------------------------------->
+<body>
+    <p>----------------------------------------------------------------------</p>
+    <p>Caracteres alfanumericos</p>
+
+    <meta charset="utf-8"> <!-- Con esta estiqueta se pueden visualizar caracteres sin la
+                                nesesidad de escribir los siguientes codigos, debe estar 
+                                situada dentro de  de "<head>...</head>" -->
+    <p>&aacute;</p>
+    <p>&abreve;</p>
+    <p>&euro;</p>
+    <p>&Uuml;</p>
+    <p>&uuml;</p>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+-> ¿Que es JavaScript?
+
+    Lenguaje de programacion
+    Interpretado
+    Orientado a objetos
+    Imperativo -> (linea a linea)
+    Case sensitive -> ( uppercase y lowercase ) { sensible a mayus y minus }
+    Basado en prototipos / instancias / classless
+    Tipado debil -> ( las variables pueden contener cualquier tipo de datos en cualquier momento )
+    Lenguaje dinamico -> ( La var no se ajusta al dato, el dato se ajusta a la var )
+
+    Esta basado en ECMASCTRIPT (5.1 y 6, 7, 8, Next)
+        ECMAScript es el nombre oficial de la especificación de JavaScript.
+        La especificación define la sintaxis y el comportamiento del lenguaje de programación
+
+-> ¿Para que se usa?
+
+    Principalmente para el dinamismo de los sitios web
+    Tecnologia backend trabajando con NodeJS
+    Tecnologia frontend trabajando con Angular, React o VueJS
+
+-> Formas de enlazar JavaScript
+
+    En linea
+        <h1 onclick="alert('hola')"> click </h1>
+
+    Como contenido en una etiqueta <script></script>
+        <h1> click </h1>
+        <script type="text/javascript">
+            alert('hola')
+        </script>
+
+    Como contenido en un archivo de formato .js
+        <script src="codigo.js"></script>
+
+-> Variables ( Espacio guardado en memoria )
+
+    Concepto
+    Ejemplo
+    Tipos de dato
+        String = "HOLA"
+        Number = 12
+        Boolean = true | false
+
+    Tipos de variables
+        Let         (menos alcance)
+        Var         (alcance global)
+        Const       (no puede cambiar su valor)
+
+    Casos especiales de datos
+        Undefined   (existe pero no esta definida/inicializada)
+        Null        
+        NaN         (Not a Number)
+
+    Crear multiples variables
+        Let nombre1 = "Jorge", nombre2 = "Pedro";
+
+    Scope
+    Hoisting
+
+    Pruebas con Prompt
+        prompt("Ingresa tu mensaje"); { Es un alert() donde ingresas algun dato }
+
+-> Operadores de JavaScript
+
+    Operadores de Asignacion
+        Asignacion          x = y
+        Suma                x += y
+        Resta               x -= y
+        Multiplicacion      x *= y
+        Divicion            x /= y
+        Sobrante, Modulo    x %= y
+        Exponente           x **= y
+
+    Operadores Aritmeticos
+        Suma                +
+        Resta               -
+        Multiplicacion      *
+        Divicion            /
+        Sobrante, Modulo    %
+        Exponente           ** [ mas un valor numerico ] 
+        Incremento          ++ [ se suma de uno en uno ]
+        Decremento          -- [ se resta de uno en uno ]
+
+-> Concatenacion
+    Con el signo +
+    Con backticks o la variable ${} 
+
+-> Backticks o Acento grabe
+    [alt+96] -> ``
+    [ctrl+alt+}] -> ``
+
+    Esto sirve para poner variables sin utilizar el +, comillas("", '') o codigo HTML y evitar errores
+
+->  Esacape (de comillas simples o comilas dobles)
+    " 'Escape de comillas simples' "
+    ' "Escape de comillas dobles"  '
+
+-> Operadores (Intermedio)
+    Operadores de comparacion
+        Igualdad            a ==  b
+        Desigualdad         a !=  b
+        Identidad           a === b [ Esto verifica que sea el mismo valor y el mimos tipo de dato ]
+        No-Identidad        a !== b
+        Mayor que           a  >  b
+        Mayor igual que     a >=  b
+        Menor que           a  <  b
+        Menor igual que     a <=  b
+
+    Operadores logicos [ TRUE o FALSE ]
+        AND     &&  [ true && true = true ; true && false = false ]
+        OR      ||  [ true || true = true ; true || false = true ; false || false = false ]
+        NOT     !   [ !true = false ; !false = true ]
+
+
+-> Camel Case
+    Frases o palabras compuestas [nombrePersona, parseInt(), .getElementById(), etc..]
+
+-> Condicionales
+    If ()
+      Else If ()
+    Else ()
+
+-> Arrays
+    frutas = ["banana","uva","pera"]
+    document.write(frutas[2])
+
+    frutas = ["banana","uva","pera"]
+    fruta = frutas[0]
+    document.write(fruta)
+
+-> Arrays asociativos
+    let pc1 = {
+        nombre: "SamuelPC",
+        prosesador: "amd",
+        ram: "16gb",
+        espacio: "500gb"
+    };
+    document.write(pc1["nombre"])
+
+-> Bucles e iteracion
+
+    Sentencia while y break
+        let numero = 0
+        while (numero <  20) {
+            numero++
+            document.write(numero +"<br>")
+            if (numero == 10) {
+                break; [ termina el bucle en el valor indicado en el condicional ; '10' ]
+            }
+        }
+
+    Sentencia do while
+
+    Sentencia for y continue
+        for (let i = 0; i < 6; i++) {
+            if (i == 3) {
+                continue; [ salta el valor indicado en el condicional ; '3' ]
+            }
+            document.write(i +"<br>")
+        }
+
+    Sentencia for in
+    [ Devuelve la posicion en la que estan los elementos ]
+
+        let animales = ["gato","perro","pez"]
+        for (animal in animales) {
+            document.write(animal + "<br>")
+        }
+        document.write("--------------")
+        for (animal in animales) {
+            document.write(animales[animal] + "<br>")
+        }   
+
+    Sentencia for of
+    [ Devuelve el valor de los elementos ]
+
+        let animales = ["gato","perro","pez"]
+        for (animal of animales) {
+            document.write(animal + "<br>")
+        }
+
+    Sentencia label
+
+-> Funciones
+    Crear funciones y llamarlas
+
+        function saludar () {
+            respuesta = prompt ("Hola, como tas");
+            if (respuesta == "bien") {
+                alert("me alegro")
+            } else {
+                alert("una pena")
+            }
+        }
+        saludar()
+
+    Return
+
+        function regresarSaludo () {
+            alert("hola");
+            return "la funcion se ejecuto bien";
+        }
+        let saludo = regresarSaludo();
+        document.write(saludo)
+
+    Parametros
+
+        let num1 = 32
+        let num2 = 12
+        function suma () {
+            let res = num1 + num2
+            document.write(res)
+        }
+        suma()
+
+    Scope
+
+    [ Ejemplo 1 ]
+        function suma (num1, num2) {
+            let res = num1 + num2
+            document.write(res)
+            document.write("<br>")
+        }
+        suma(12,32)
+        suma(22,55)
+
+    [ Ejemplo 2 ]
+        function saludar (nombre) {
+            frase = `hola ${nombre} , como estas?` 
+        }
+        saludar("sam")
+        document.write(frase)
+
+    Funciones flecha
+
+        const saludar = nombre => {
+        let frase = `hola ${nombre}, como estas?`;
+            document.write(frase);
+        }
+        saludar("sam");
+
+
+-> ForEach
+    Sintaxis y usos
+    Ventaja respecto a 'for'
+    Desventajas (break, continue)
+    
+
+https://youtu.be/z95mZVUcJ-E
