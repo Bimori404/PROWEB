@@ -69,3 +69,54 @@
 
 //     document.write(resultado);
 // }
+
+/*
+
+    Calculadora de Kofla
+
+*/
+
+const sumar =  (num1, num2) => {
+    return parseInt(num1) + parseInt(num2);
+}
+const restar =  (num1, num2) => {
+    return parseInt(num1) - parseInt(num2);
+}
+const divi =  (num1, num2) => {
+    return parseInt(num1) / parseInt(num2);
+}
+const multi =  (num1, num2) => {
+    return parseInt(num1) * parseInt(num2);
+}
+
+alert("Que operacion quieres realizar?");
+let ope = prompt("1:sumar, 2:restar, 3:divi, 4:multi");
+
+if (ope == 1) {
+    let nume1 = prompt("Num 1");
+    let nume2 = prompt("Num 2");
+    let res = sumar(nume1, nume2);
+    alert("resultado: "+res);
+}
+else if (ope == 2) {
+    let nume1 = prompt("Num 1");
+    let nume2 = prompt("Num 2");
+    let res = restar(nume1, nume2);
+    alert("resultado: "+res);
+}
+else if (ope == 3) {
+    let nume1 = prompt("Num 1");
+    let nume2 = prompt("Num 2");
+    let res = divi(nume1, nume2);
+    alert("resultado: "+res);
+}
+else if (ope == 4) {
+    let nume1 = prompt("Num 1");
+    let nume2 = prompt("Num 2");
+    let res = multi(nume1, nume2);
+    alert("resultado: "+res);
+}
+
+else {
+    alert("no se encontro la operacion")
+}
