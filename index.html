@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes JS en HTML</title>
+</head>
+
+<body>
+    <div class="saludo"></div>
+    <script>
+        const parent = document.querySelector(".saludo");
+
+        const parrafo = document.createElement("p");
+        parrafo.innerText = "Hola Mundo";
+        parent.appendChild(parrafo);
+
+    </script>
+</body>
+
+</html>
+
+
+
